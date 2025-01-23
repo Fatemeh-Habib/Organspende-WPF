@@ -8,7 +8,13 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Image HorizontalAlignment="Left" Height="337" Margin="117,54,0,0" VerticalAlignment="Top" Width="640"/>
-        <Image Margin="0,-14,0,0" Source="/1.jpg" Stretch="Fill"/>
+        <Image Source="/1.jpg" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Height="33" Margin="223,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="549" FontSize="24" FontWeight="Bold"><Run Language="de-de" Text="Bitte beantworten Sie folgende Fragen "/></TextBlock>
+        <GridSplitter Height="100" Width="5"/>
+        <TextBlock HorizontalAlignment="Left" Height="89" Margin="29,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="312" FontSize="18" FontWeight="Bold"><Run Language="de-de" Text="Frage 1) "/><LineBreak/><Run Language="de-de"/><LineBreak/><Run Language="de-de" Text="Was ist eine Organspende?"/></TextBlock>
+        <CheckBox Content="Die freiwillige Überlassung von Organen für medizinische Zwecke" HorizontalAlignment="Left" Height="57" Margin="16,167,0,0" VerticalAlignment="Top" Width="390"/>
+        <CheckBox Content="Der Verkauf von Organen an Krankenhäuser" HorizontalAlignment="Left" Height="57" Margin="16,255,0,0" VerticalAlignment="Top" Width="260"/>
+        <CheckBox Content="Eine Methode, Organe nachwachsen zu lassen" HorizontalAlignment="Left" Height="57" Margin="16,326,0,0" VerticalAlignment="Top" Width="300"/>
 
     </Grid>
 </Window>
