@@ -28,3 +28,5 @@ C:\Users\Habib\Desktop\Organspende-WPF\Organspende-WPF\Organspende-WPF\obj\Debug
 C:\Users\Habib\Desktop\Organspende-WPF\Organspende-WPF\Organspende-WPF\obj\Debug\Organspende-WPF.csproj.CoreCompileInputs.cache
 C:\Users\Habib\Desktop\Organspende-WPF\Organspende-WPF\Organspende-WPF\obj\Debug\Organspende-WPF.exe
 C:\Users\Habib\Desktop\Organspende-WPF\Organspende-WPF\Organspende-WPF\obj\Debug\Organspende-WPF.pdb
+C:\Users\Habib\Desktop\Organspende-WPF\Organspende-WPF\Organspende-WPF\obj\Debug\Window1.g.cs
+C:\Users\Habib\Desktop\Organspende-WPF\Organspende-WPF\Organspende-WPF\obj\Debug\Window1.baml

@@ -29,5 +29,14 @@ namespace Organspende_WPF
         {
 
         }
+
+        private void OpenNewWindow_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 newWindow = new Window1(); // Neues Window1 erstellen
+            newWindow.Show(); // Fenster öffnen
+            this.Close(); // Aktuelles Fenster schließen (optional)
+        }
+
+
     }
 }
