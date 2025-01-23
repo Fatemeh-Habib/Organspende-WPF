@@ -23,5 +23,17 @@ namespace Organspende_WPF
         {
             InitializeComponent();
         }
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void OpenNewWindow_Click(object sender, RoutedEventArgs e)
+        {
+            Window2 newWindow = new Window2(); // Neues Window1 erstellen
+            newWindow.Show(); // Fenster öffnen
+            this.Close(); // Aktuelles Fenster schließen (optional)
+        }
     }
 }
