@@ -25,18 +25,32 @@ namespace Organspende_WPF
             InitializeComponent();
         }
 
+        
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
 
+
         private void OpenNewWindow_Click(object sender, RoutedEventArgs e)
         {
+
             Window1 newWindow = new Window1(); // Neues Window1 erstellen
             newWindow.Show(); // Fenster öffnen
             this.Close(); // Aktuelles Fenster schließen (optional)
+
+
         }
 
-
+        private void ZeigeLoesung(object sender, RoutedEventArgs e)
+        {
+            if (rb1.IsChecked == true)
+            {
+                App.Antwort = true;
+                App.FrgR += 1;
+            }
+            Frage1.Visibility = Visibility.Hidden;
+            Antwort.Visibility = Visibility.Visible;
+        }
     }
 }

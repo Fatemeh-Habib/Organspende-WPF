@@ -5,17 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Organspende_WPF"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen" 
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Image HorizontalAlignment="Left" Height="337" Margin="117,54,0,0" VerticalAlignment="Top" Width="640"/>
-        <Image Source="/1.jpg" Stretch="Fill"/>
-        <TextBlock HorizontalAlignment="Left" Height="33" Margin="223,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="549" FontSize="24" FontWeight="Bold"><Run Language="de-de" Text="Bitte beantworten Sie folgende Fragen "/></TextBlock>
-        <GridSplitter Height="100" Width="5"/>
-        <TextBlock HorizontalAlignment="Left" Height="89" Margin="29,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="312" FontSize="18" FontWeight="Bold"><Run Language="de-de" Text="Frage 1) "/><LineBreak/><Run Language="de-de"/><LineBreak/><Run Language="de-de" Text="Was ist eine Organspende?"/></TextBlock>
-        <CheckBox Content="Die freiwillige Überlassung von Organen für medizinische Zwecke" HorizontalAlignment="Left" Height="57" Margin="16,167,0,0" VerticalAlignment="Top" Width="390"/>
-        <CheckBox Content="Der Verkauf von Organen an Krankenhäuser" HorizontalAlignment="Left" Height="57" Margin="16,237,0,0" VerticalAlignment="Top" Width="260"/>
-        <CheckBox Content="Eine Methode, Organe nachwachsen zu lassen" HorizontalAlignment="Left" Height="57" Margin="16,326,0,0" VerticalAlignment="Top" Width="300"/>
-        <Button Content="Nächste Frage" HorizontalAlignment="Left" Height="50" Margin="645,354,0,0" VerticalAlignment="Top" Width="139" Click="OpenNewWindow_Click" FontWeight="Bold"/>
+        <Canvas x:Name="Frage1" >
 
+            <Image Source="/1.jpg" Stretch="Fill" Height="434" Width="800" />
+            <TextBlock HorizontalAlignment="Left" Height="33" Margin="223,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="549" FontSize="24" FontWeight="Bold"><Run Language="de-de" Text="Bitte beantworten Sie folgende Fragen "/></TextBlock>
+            <TextBlock  Width="312" FontSize="18" FontWeight="Bold" Canvas.Left="16" Canvas.Top="86" HorizontalAlignment="Center" VerticalAlignment="Top">Frage 1) <LineBreak/>Was ist eine Organspende?</TextBlock>
+
+            <RadioButton x:Name="rb1" GroupName="Frg1" Content="Die freiwillige Überlassung von Organen für medizinische Zwecke" HorizontalAlignment="Left" Height="57" Margin="16,167,0,0" VerticalAlignment="Top" Width="390"/>
+            <RadioButton x:Name="rb2" GroupName="Frg1" Content="Der Verkauf von Organen an Krankenhäuser" HorizontalAlignment="Left" Height="57" Margin="16,237,0,0" VerticalAlignment="Top" Width="260"/>
+            <RadioButton x:Name="rb3" GroupName="Frg1" Content="Eine Methode, Organe nachwachsen zu lassen" HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="300" Canvas.Left="16" Canvas.Top="299"/>
+            <Button Content="Weiter" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="139" Click="ZeigeLoesung" FontWeight="Bold" Canvas.Left="549" Canvas.Top="298"/>
+        </Canvas>
+        <Canvas x:Name="Antwort" Visibility="Hidden">
+            <TextBlock>Hallo</TextBlock>
+            <Button Content="Nächste Frage" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="139" Click="OpenNewWindow_Click" FontWeight="Bold" Canvas.Left="549" Canvas.Top="298"/>
+        </Canvas>
     </Grid>
 </Window>
